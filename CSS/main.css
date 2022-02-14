@@ -15,7 +15,7 @@ body{
 }
 .header-logo{
     display: block;
-    background-image: url(../img/logo.svg);
+    background-image: url(/img/logo.svg);
     width: 176px;
     height: 56px;
     background-repeat: no-repeat;
@@ -78,7 +78,7 @@ body{
 .bg{
     text-align: center;
     color: #FFFFFF;
-    background-image: url(/img/bg.png);
+    background-image: url(../img/bg.png);
     background-size: cover;
     background-position: center center;
     padding: 142px 0;
