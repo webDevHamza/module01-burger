@@ -46,7 +46,6 @@ header{
     border-radius: 1.5px;
     background: transparent;
     display: flex;
-
 }
 .header-nav a.active::after{
     background: #FFC725;
@@ -139,10 +138,11 @@ header{
     background-image: url(../img/box-banner.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 100px 727px 100px 100px;
+    padding: 100px 100px 100px 100px;
+    background-position: center center;
+    margin-bottom: 102px;
 }
 .banner-title{
-    font-family: 'Nunito Sans', sans-serif;
     font-weight: 900;
     font-size: 60px;
     line-height: 70px;
@@ -172,7 +172,7 @@ header{
 }
 .banner-link{
     text-decoration: none;
-    font-family: 'Nunito Sans', sans-serif;
+    text-transform: uppercase;
     font-size: 14px;
     line-height: 18px;
     font-weight: 700;
@@ -183,44 +183,22 @@ header{
     border-radius: 5px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*.menu-header{
+.menu-header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 37px;
 }
 .menu-title{
     font-size: 44px;
     font-weight: 700;
     text-transform: uppercase;
     color: #1B2A49;
+    margin: 0;
 }
 .menu-select{
     border: 1px solid #DEDEDE;
-    padding: 10px 30px;
+    padding: 12px 30px;
     border-radius: 22px;
     color: #443737;
     font-size: 15px;
@@ -229,5 +207,76 @@ header{
     background-image: url(../img/arrow.svg);
     background-repeat: no-repeat;
     background-size: 12.79px 7.75px;
-    background-position: 95% center;
-}*/ 
+    background-position: 89% center;
+}
+.menu-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 20px;
+}
+.menu-grid-thumb{
+    width: 100%;
+    height: 430px;
+    position: relative;
+    overflow: hidden;
+
+}
+.menu-grid-thumb img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+.menu-grid-title{
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: 600;
+    color: #1B2A49;
+    margin-top: 21px;
+    margin-bottom: 6px;
+    text-align: center;
+}
+.menu-grid-prise{
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #979797;
+    margin-top: 0;
+    margin-bottom: 18px;
+    text-align: center;
+}
+.menu-grid-btn{
+    width: 153px;
+    height: 38px;
+    background-color: #FBB731;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+}
+.grid-menu-icon{
+    background-image: url(../img/shopping-cart-icon.svg);
+    width: 18px;
+    height: 18px;
+    gap: 5px;
+    padding: ;
+}
+.grid-menu-text{
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #1E2F40;
+}
+.addition-menu-title{
+    font-size: 44px;
+    line-height: 49px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 105px;
+}
+}
