@@ -280,7 +280,6 @@ header{
     width: 18px;
     height: 18px;
     gap: 5px;
-    padding: ;
 }
 .grid-menu-text{
     font-size: 14px;
@@ -323,10 +322,13 @@ header{
     font-weight: 700;
     line-height: 24px;
 }
-.footer-list a {
+.footer-list-item a {
     color: #DEDEDE;
     text-decoration: none;
     font-weight: 400;
+}
+.footer-list-item a:hover{
+    color: #FBB731;
 }
 .footer-item span {
     color: #DEDEDE;
@@ -344,6 +346,9 @@ header{
     font-size: 20px;
     font-weight: 900;
     color: #FBB731;
+}
+.footer-list-tel a:hover{
+    color: #FAF9F9;
 }
 .footer-box{
     display: flex;
