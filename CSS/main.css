@@ -146,7 +146,7 @@ header{
     background-size: cover;
     padding: 100px 100px 100px 100px;
     background-position: center center;
-    margin-bottom: 102px;
+    margin-bottom: 82px;
 }
 .banner-title{
     font-weight: 900;
@@ -188,12 +188,14 @@ header{
     padding: 18px 22px;
     border-radius: 5px;
     border: 1px solid #FBB731;
+    transition: 0.2s;
 }
 .banner-link:hover{
     background-color: transparent;
     color: #FBB731;
 }
 .menu{
+    padding-top: 20px;
     margin-bottom: 140px;
 }
 .menu-header{
@@ -271,6 +273,7 @@ header{
     cursor: pointer;
     display: flex;
     gap: 10px;
+    transition: 0.2s;
 }
 .menu-grid-btn:hover{
     background-color: #F37335;
@@ -359,7 +362,29 @@ header{
     padding-left: 0;
     list-style-type: none;
 }
-
+.button-up{
+    background-color: #FBB731;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #1E2F40;
+    text-decoration: none;
+    padding: 5px 20px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 5px;
+    transition: 1s;
+}
+.button-up:hover{
+    background-color: #F37335;
+}
+.button-up.hidden{
+    opacity: 0;
+}
+.button-up.visible{
+    opacity: 1;
+}
 /* style index */
 
 .main {
