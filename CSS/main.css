@@ -41,6 +41,7 @@ header{
     font-size: 20px;
     color: #443737;
     text-decoration: none;
+    transition: 0.2s;
 }
 .header-nav a:hover{
     color: #FFC725;
@@ -109,6 +110,7 @@ header{
     font-size: 15px;
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
+    transition: 0.2s;
 }
 .breadcrumbs a:hover{
     color: #FFC725;
@@ -329,6 +331,7 @@ header{
     color: #DEDEDE;
     text-decoration: none;
     font-weight: 400;
+    transition: 0.2s;
 }
 .footer-list-item a:hover{
     color: #FBB731;
@@ -350,6 +353,7 @@ header{
     font-weight: 900;
     color: #FBB731;
     text-decoration: none;
+    transition: 0.2s;
 }
 .footer-list-tel a:hover{
     color: #FAF9F9;
@@ -439,7 +443,7 @@ header{
     font-weight: 700;
     transition: 0.2s;
 }
-.content-link, 
+.content-link:hover, 
 .promo a:hover {
     background-color: #F37335;
 }
@@ -516,4 +520,34 @@ header{
     font-weight: 700;
     margin-bottom: 10px;
     margin-top: 0;
+}
+
+/*response*/
+
+@media (max-width: 1000px) {
+    .container{
+        max-width: 738px;
+    }
+    .header-logo{
+        width: 150px;
+        height: 48px;
+        background-size: contain;
+    }
+    .header-nav{
+        gap: 22px;
+    }
+    .header-item{
+        flex-basis: 75.5%;
+    }
+    .bg{
+        margin-bottom: 72px;
+    }
+    .banner-box{
+        background-position: -80px center;
+        padding: 100px 40px 120px;
+    }
+    .menu-grid{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px 15px;
+    }
 }
