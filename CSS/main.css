@@ -385,6 +385,7 @@ header{
 .button-up.visible{
     opacity: 1;
 }
+
 /* style index */
 
 .main {
@@ -436,6 +437,11 @@ header{
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 700;
+    transition: 0.2s;
+}
+.content-link, 
+.promo a:hover {
+    background-color: #F37335;
 }
 .visual {
     flex-grow: 1;
