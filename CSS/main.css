@@ -522,7 +522,65 @@ header{
     margin-top: 0;
 }
 
-/*response*/
+/* modal */
+
+.burger{
+    width: 34px;
+    height: 22px;
+    background-image: url(../img/burger.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.modal{
+    background-color: #fff8dc;
+    max-width: 500px;
+    text-align: center;
+    position: absolute;
+    top: -400px;
+    left: 0;
+    right: 0;
+    margin: 20px auto 0;
+    padding: 40px 30px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.modal .header-nav{
+    flex-direction: column;
+    align-items: center;
+    gap: 23px;
+    margin: 0;
+}
+.burger-close{
+    background-image: url(../img/burger-close.png);
+    width: 22px;
+    height: 22px;
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+
+/*responsive*/
+
+@media (min-width: 1001px){
+    .footer-list + .footer-list-tel{
+        display: none;
+    }
+}
+
+@media(min-width: 766px){
+    .header-burger{
+        display: none;
+    }
+}
 
 @media (max-width: 1000px) {
     .container{
@@ -549,5 +607,196 @@ header{
     .menu-grid{
         grid-template-columns: repeat(2, 1fr);
         gap: 50px 15px;
+    }
+    .menu-other{
+        overflow: hidden;
+        height: 659px;
+    }
+    .menu-other .menu-grid{
+        display: flex;
+        width: auto;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding-bottom: 50px;
+    }
+    .menu-other .menu-grid-item{
+        flex: 0 0 281px;
+    }
+    .menu-other .menu-grid-thumb,
+    .menu-other .menu-grid-thumb img{
+        height: 320px;
+    }
+    .footer-tel {
+        display: none;
+    }
+    .footer-list + .footer-list-tel{
+        display: block;
+    }
+
+    /*style index*/
+
+    .wrapper{
+        max-width: 738px;
+        margin: 0 auto;
+    }
+    .content{
+        padding-top: 42px;
+        padding-bottom: 122px;
+
+    }
+    .content-title span{
+        font-size: 22px;
+        line-height: 27px;
+    }
+    .content-title{
+        font-size: 86px;
+        line-height: 100px;
+    }
+    .content-text{
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .content-link, .promo a{
+        font-size: 13px;
+        line-height: 16px;
+
+    }
+    .visual{
+        right: 38px;
+    }
+    .visual-bg{
+        width: 198px;
+    }
+    .main img{
+        width: 456px;
+        right: -105px;
+        margin-top: 131px;
+    }
+}
+
+@media(max-width:765px){
+    nav{
+        display: none;
+    }
+    .header{
+        gap: 21px;
+    }
+}
+
+@media(max-width: 567px){
+    .breadcrumbs a{
+        font-size: 15px;
+    }
+    .title{
+        font-size: 38px;
+    }
+    .description{
+        font-size: 12px;
+    }
+    .bg{
+        padding: 55px 0;
+    }
+    .banner-box{
+        background-position: 17% center;
+        padding: 35px 24px 54px;
+    }
+    .menu-select{
+        flex-basis: 207px;
+    }
+    .menu-grid-thumb{
+        height: 340px;
+    }
+    .menu-grid-title{
+        font-size: 25px;
+        margin-top: 10px;
+    }
+    .addition-menu-title{
+        margin-top: 65px;
+        text-align: center;
+    }
+    .menu-grid-title{
+        margin-bottom: 0;
+    }
+    .menu-grid-prise{
+        margin-bottom: 7px;
+    }
+    .menu-grid-btn{
+        margin-bottom: 17px;
+    }
+    .menu{
+        margin-bottom: 0;
+    }
+    .footer{
+        padding-top: 80px;
+        padding-bottom: 60px;
+    }
+    .footer-item h2{
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 360px){
+    .header-logo{
+        width: 116px;
+        height: 37px;
+        background-size: contain;
+    }
+    .menu-title{
+        font-size: 27px;
+    }
+    .menu-select{
+        flex-basis: 137px;
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+    .menu-grid{
+        gap: 20px;
+        padding-bottom: 90px;
+    }
+    .menu-grid-title{
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .menu-grid-prise{
+        font-size: 16px;
+    }
+    .menu-grid-btn{
+        width: 129px;
+    }
+    .addition-menu-title{
+        margin-top: 50px;
+        font-size: 27px;
+        line-height: 56px;
+    }
+    .footer-box{
+        flex-direction: column;
+    }
+    
+    /*style index*/
+
+    .content-title span{
+        font-size: 14px;
+        line-height: 27px;
+    }
+    .content-title{
+        font-size: 58px;
+        line-height: 69px;
+    }
+    .content-text{
+        font-size: 13px;
+        line-height: 18px;
+    }
+    .content-link{
+        font-size: 13px;
+        line-height: 16px;
+    }
+    .visual-bg{
+        visibility: hidden;
+    }
+}
+
+@media(max-width: 320px){
+    .banner-box{
+        background-position: 25% center;
     }
 }
