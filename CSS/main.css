@@ -198,7 +198,6 @@ header{
 }
 .menu{
     padding-top: 20px;
-    margin-bottom: 140px;
 }
 .menu-header{
     display: flex;
@@ -304,6 +303,7 @@ header{
     color: #fff;
     padding-top: 117px;
     padding-bottom: 106px;
+    margin-top: 139px;
 }
 .footer-logo {
     width: 63px;
@@ -552,6 +552,7 @@ header{
     align-items: center;
     gap: 23px;
     margin: 0;
+    padding: 0 40px;
 }
 .burger-close{
     background-image: url(../img/burger-close.png);
@@ -642,6 +643,7 @@ header{
     .content{
         padding-top: 42px;
         padding-bottom: 122px;
+        flex: 0 0 569px;
 
     }
     .content-title span{
@@ -674,7 +676,7 @@ header{
     }
 }
 
-@media(max-width:765px){
+@media(max-width:764px){
     nav{
         display: none;
     }
@@ -683,7 +685,7 @@ header{
     }
 }
 
-@media(max-width: 567px){
+@media(max-width: 566px){
     .breadcrumbs a{
         font-size: 15px;
     }
@@ -730,16 +732,30 @@ header{
         padding-top: 80px;
         padding-bottom: 60px;
     }
+    .footer-item{
+        flex: 0 1 auto;
+    }
+    
     .footer-item h2{
         font-size: 15px;
     }
 }
 
 @media(max-width: 360px){
+    .header{
+        padding-top: 20px;
+        padding-bottom: 18px;
+    }
     .header-logo{
         width: 116px;
         height: 37px;
         background-size: contain;
+    }
+    .banner-box{
+        padding: 35px 14px 11px;
+    }
+    .container{
+        padding: 0 26px;
     }
     .menu-title{
         font-size: 27px;
@@ -750,8 +766,14 @@ header{
         padding-right: 13px;
     }
     .menu-grid{
-        gap: 20px;
-        padding-bottom: 90px;
+        gap: 12px;
+        padding-bottom: 0;
+    }
+    .menu-grid-thumb{
+        height: 180px;
+    }
+    .menu-grid-thumb img{
+        width: 158px;
     }
     .menu-grid-title{
         font-size: 13px;
@@ -763,8 +785,9 @@ header{
     .menu-grid-btn{
         width: 129px;
     }
+
     .addition-menu-title{
-        margin-top: 50px;
+        margin-top: 9px;
         font-size: 27px;
         line-height: 56px;
     }
@@ -774,6 +797,10 @@ header{
     
     /*style index*/
 
+    .content{
+        padding-left: 15px;
+        flex: 0 1 274px;
+    }
     .content-title span{
         font-size: 14px;
         line-height: 27px;
@@ -790,8 +817,36 @@ header{
         font-size: 13px;
         line-height: 16px;
     }
-    .visual-bg{
+    .visual-bg-wrapper{
         visibility: hidden;
+    }
+    .visual-bg-wrapper img{
+        width: 284px;
+        margin-top: 329px;
+        margin-right: 170px;
+    }
+    .promo{
+        padding-top: 105px;
+    }
+    .promo-wrapper{
+        flex-direction: column;
+    }
+    .promo-left{
+        padding-left: 30px;
+    }
+    .promo-right{
+        padding-left: 31px;
+    }
+    .promo-right a{
+        padding: 17px 40px;
+    }
+    .footer-box{
+        position: relative;
+    }
+    .footer-list-tel{
+        position: absolute;
+        top: 0;
+        right: 5px;
     }
 }
 
