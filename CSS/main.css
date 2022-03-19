@@ -1,6 +1,7 @@
 body{
     font-family: 'Nunito Sans', sans-serif;
 }
+
 .container{
     max-width: 1180px;
     margin: 0 auto;
@@ -242,7 +243,8 @@ header{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 .menu-grid-title{
     font-size: 30px;
@@ -301,9 +303,9 @@ header{
 .footer {
     background: #1E2F40;
     color: #fff;
-    padding-top: 117px;
-    padding-bottom: 106px;
-    margin-top: 139px;
+    padding-top: 118px;
+    padding-bottom: 93px;
+    margin-top: 138px;
 }
 .footer-logo {
     width: 63px;
@@ -405,13 +407,13 @@ header{
     color: #FAF9F9;
     flex: 0 0 580px;
     padding-top: 170px;
-    padding-bottom: 170px;
+    padding-bottom: 169px;
 }
 .content-title {
     font-size: 120px;
     font-weight: 800;
     text-transform: uppercase;
-    line-height: 120px;
+    line-height: 140px;
     margin-bottom: 40px;
     margin-top: 0;
     margin-bottom: 0;
@@ -422,13 +424,14 @@ header{
     font-weight: 700;
     line-height: 38px;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 13px;
 }
 .content-text {
     font-family: 'Open Sans', sans-serif;
     font-size: 19px;
     line-height: 1.4;
-    margin-bottom: 42px;
+    margin-top: 32px;
+    margin-bottom: 48px;
 }
 .content-link,
 .promo a {
@@ -436,7 +439,7 @@ header{
     background-color: #FBB731;
     border-radius: 5px;
     text-decoration: none;
-    padding: 20px 45px;
+    padding: 21px 47px;
     display: inline-block;
     text-transform: uppercase;
     font-size: 14px;
@@ -676,14 +679,62 @@ header{
     }
 }
 
-@media(max-width:764px){
+@media(max-width:765px){
     nav{
         display: none;
+    }
+
+    /*style index*/
+    
+    .content{
+        padding-bottom: 124px;
+        padding-left: 22px;
+        flex: 0 0 560px;
+    }
+    .content-text{
+        margin-top: 23px;
+        margin-bottom: 33px;
+    }
+    .content-link{
+        padding: 17px 41px
     }
     .header{
         gap: 21px;
     }
-}
+    .visual{
+        right: 53px;
+    }
+    .main .visual-bg{
+        width: 198px;
+    }
+    .promo{
+        padding: 106px 14px 5px;
+    }
+    }
+    .promo-left{
+        padding: 44px 30px;
+    }
+    .cost{
+        margin-top: 5px;
+    }
+    .promo-right{
+        padding-top: 55px;
+        padding-bottom: 44px;
+        padding-left: 33px;
+    }
+    .promo-description{
+        margin-bottom: 17px;
+    }
+    .free{
+        margin-top: 8px;
+    }
+    .promo a{
+        padding: 17px 41px;
+    }
+    .footer{
+        padding-top: 68px;
+        padding-bottom: 62px;
+    }
 
 @media(max-width: 566px){
     .breadcrumbs a{
@@ -742,6 +793,10 @@ header{
 }
 
 @media(max-width: 360px){
+    
+    .content{
+        padding-bottom: 168px;
+    }
     .header{
         padding-top: 20px;
         padding-bottom: 18px;
@@ -751,6 +806,7 @@ header{
         height: 37px;
         background-size: contain;
     }
+    
     .banner-box{
         padding: 35px 14px 11px;
     }
@@ -769,6 +825,14 @@ header{
         gap: 12px;
         padding-bottom: 0;
     }
+    section.menu-other{
+        height: 370px;
+    }
+    .menu-other
+    .menu-grid-item{
+        flex: 0 0 119px;
+    }
+    .menu
     .menu-grid-thumb{
         height: 180px;
     }
@@ -794,62 +858,41 @@ header{
     .footer-box{
         flex-direction: column;
     }
-    
+
+
     /*style index*/
 
-    .content{
-        padding-left: 15px;
-        flex: 0 1 274px;
+    .visual-bg{
+        display: none;
     }
-    .content-title span{
+    .content{
+        flex: 0 0 291px;
+    }
+    .content-title
+    span{
         font-size: 14px;
-        line-height: 27px;
     }
     .content-title{
         font-size: 58px;
         line-height: 69px;
     }
-    .content-text{
-        font-size: 13px;
-        line-height: 18px;
-    }
-    .content-link{
-        font-size: 13px;
-        line-height: 16px;
-    }
-    .visual-bg-wrapper{
-        visibility: hidden;
-    }
-    .visual-bg-wrapper img{
-        width: 284px;
+    .main img{
+        width: 293px;
+        right: -124px;
         margin-top: 329px;
-        margin-right: 170px;
-    }
-    .promo{
-        padding-top: 105px;
     }
     .promo-wrapper{
         flex-direction: column;
+        padding: 0;
+        gap: 21px;
     }
-    .promo-left{
-        padding-left: 30px;
-    }
-    .promo-right{
-        padding-left: 31px;
-    }
-    .promo-right a{
-        padding: 17px 40px;
-    }
-    .footer-box{
-        position: relative;
-    }
-    .footer-list-tel{
-        position: absolute;
-        top: 0;
-        right: 5px;
+    .footer{
+        margin-top: 56px;
+        padding: 61px 0 25px;
     }
 }
 
+    
 @media(max-width: 320px){
     .banner-box{
         background-position: 25% center;
